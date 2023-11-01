@@ -79,9 +79,10 @@ If you use CASCADENET in your research or find it useful, please cite the follow
 
 ## 9. License
 
-This project is licensed under the [License Name], and the details of the license can be found in the "LICENSE" file.
 
-For any questions or issues, please feel free to contact [Your Contact Information].
+For any questions or issues, please feel free to contact Debayan Bhattacharya (debayan.bhattacharya@tuhh.de).
+
+
 
 ---
 
