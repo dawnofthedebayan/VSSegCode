@@ -1,7 +1,7 @@
-# CASCADENET: Automatic Segmentation of Vestibular Schwannoma from T1 and T2-Weighted MRI Using Deep Learning
+# Automatic Segmentation of Vestibular Schwannoma from MRI
 
 ## Table of Contents
-1. [Introduction](#1-introduction)
+1. [Overview](#1-Overview)
 2. [Installation](#2-installation)
 3. [Usage](#3-usage)
 4. [Results](#4-results)
@@ -11,17 +11,14 @@
 8. [Citation](#8-citation)
 9. [License](#9-license)
 
----
 
-## 1. Introduction
+## 1. Overview
+This repository contains the implementation of our two-stage Convolutional Neural Network (CNN) model for the automatic segmentation of Vestibular Schwannoma (VS) from T1 and T2-weighted Magnetic Resonance Images (MRI). This project aims to improve the accuracy of tumor size estimation in VS, which is crucial for patient management and clinical workflow.
 
-CASCADENET is a deep learning model designed for the automatic segmentation of Vestibular Schwannoma (VS) from T1 and T2-weighted Magnetic Resonance Images (MRI). Management of VS necessitates accurate tumor size estimation, traditionally relying on linear dimensions. A more precise approach involves volumetric measurements over time. Both methods require manual tumor delineation in MRI slices, which is time-consuming and labor-intensive. Automatic segmentation is essential for enhancing clinical workflow and aiding patient management.
-
-CASCADENET is a two-stage Convolutional Neural Network (CNN) model that simplifies the segmentation process. The first CNN generates an initial tumor region estimate, and the second CNN refines it using the predicted segmentation mask and input image. Spatial attention is incorporated by leveraging the first CNN's encoder features to enhance segmentation accuracy in the second CNN.
 
 ## 2. Installation
 
-To use CASCADENET, you will need the following software and libraries:
+To use our network, you will need the following software and libraries:
 
 You can install these dependencies using the following command:
 
@@ -31,13 +28,13 @@ pip install -r requirements.txt
 
 ## 3. Usage
 
-To run the CASCADENET model for Vestibular Schwannoma segmentation, follow these steps:
+To run the  model for Vestibular Schwannoma segmentation, follow these steps:
 
 1. **Data Preprocessing:**
    - Prepare your MRI data in the appropriate format.
 
 2. **Model Training:**
-   - Train the CASCADENET model on your dataset.
+   - Train the model on your dataset.
 
 3. **Model Evaluation:**
    - Evaluate the model using publicly available or in-house datasets.
@@ -71,7 +68,7 @@ For a detailed understanding of CASCADENET's architecture, please refer to the "
 
 ## 8. Citation
 
-If you use CASCADENET in your research or find it useful, please cite the following paper:
+If you use our model in your research or find it useful, please cite the following paper:
 
 ```
 [Insert Citation Here]
@@ -82,8 +79,3 @@ If you use CASCADENET in your research or find it useful, please cite the follow
 
 For any questions or issues, please feel free to contact Debayan Bhattacharya (debayan.bhattacharya@tuhh.de).
 
-
-
----
-
-Thank you for using CASCADENET for Vestibular Schwannoma segmentation. We hope this tool will assist in improving clinical workflow and patient management in the field of medical imaging.
